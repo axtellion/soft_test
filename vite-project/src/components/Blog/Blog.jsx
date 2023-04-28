@@ -1,9 +1,9 @@
 import blog from "../../img/images/home/blog.jpg";
-import { Box, PreTitle, Title, Text, Btn } from "./Blog.styled";
+import { Box, PreTitle, Title, Text, Btn, Container } from "./Blog.styled";
 
 export const Blog = () => {
   return (
-    <div>
+    <Container>
       <img src={blog} alt="Blog" />
       <Box>
         <PreTitle>April 16 2020</PreTitle>
@@ -16,6 +16,6 @@ export const Blog = () => {
         </Text>
         <Btn>Read Our Blog</Btn>
       </Box>
-    </div>
+    </Container>
   );
 };

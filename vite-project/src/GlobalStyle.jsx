@@ -24,6 +24,7 @@ html {
   color: white;
   font-weight: 400px;
   font-size: 16px;
+  justify-content: center;
 }
 img {
   display: block;

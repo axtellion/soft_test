@@ -1,10 +1,25 @@
+import useMediaQuery from "react-use-media-query-hook";
 import people from "../../img/images/home/people.jpg";
-import { Box, PreTitle, Text, Title, Btn } from "./Specificity.styled";
+import peopleTab from "../../img/images/home/peopleTab.jpg";
+import {
+  Box,
+  PreTitle,
+  Text,
+  Title,
+  Btn,
+  Container,
+} from "./Specificity.styled";
 
 export const Specificity = () => {
+  const isPhone = useMediaQuery("(max-width: 767px)");
+  const isTable = useMediaQuery("(min-width: 768px) and (max-width: 1359px)");
+  const isDesctop = useMediaQuery("(min-width: 1360px)");
+
   return (
-    <div>
-      <img src={people} alt="Team" />
+    <Container>
+      {isPhone && <img src={people} alt="Team" />}
+      {isTable && <img src={peopleTab} alt="Team" />}
+      {isDesctop && <img src={people} alt="Team" />}
       <Box>
         <PreTitle>What you are looking for</PreTitle>
         <Title>We provide bespoke solutions</Title>
@@ -16,6 +31,6 @@ export const Specificity = () => {
         </Text>
         <Btn>Read More</Btn>
       </Box>
-    </div>
+    </Container>
   );
 };

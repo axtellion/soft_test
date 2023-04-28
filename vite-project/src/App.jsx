@@ -1,5 +1,6 @@
 import { GlobalStyle } from "./GlobalStyle";
 import { Blog } from "./components/Blog/Blog";
+import { Callback } from "./components/Callback/Callback";
 import { Cases } from "./components/Cases/Cases";
 import { Footer } from "./components/Footer/Footer";
 import { Hero } from "./components/Hero/Hero";
@@ -14,6 +15,7 @@ function App() {
       <Cases />
       <Blog />
       <Team />
+      <Callback />
       <Footer />
       <GlobalStyle />
     </>

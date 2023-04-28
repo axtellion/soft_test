@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  margin: 0 auto;
+  min-width: 320px;
+
   padding-top: 72px;
   padding-bottom: 50px;
   padding-left: 20px;
@@ -8,6 +11,10 @@ export const Container = styled.div`
 
   background-color: white;
   color: black;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 `;
 
 export const Box = styled.div`
