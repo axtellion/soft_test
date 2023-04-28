@@ -64,6 +64,8 @@ export const Foto = styled.img`
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
 
   @media screen and (min-width: 768px) {

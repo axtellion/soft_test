@@ -3,7 +3,7 @@ import linkidin from "../../img/images/footer/linkidin.svg";
 import twitter from "../../img/images/footer/twitter.svg";
 import youtube from "../../img/images/footer/youtube.svg";
 
-import { Box, List } from "./Footer.styled";
+import { Box, List, Text } from "./Footer.styled";
 
 export const Footer = () => {
   return (
@@ -22,7 +22,7 @@ export const Footer = () => {
           <img src={youtube} alt="Link" />
         </li>
       </List>
-      <p>Copyright © 2021 - FinanceLedger</p>
+      <Text>Copyright © 2021 - FinanceLedger</Text>
     </Box>
   );
 };

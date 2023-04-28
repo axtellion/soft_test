@@ -18,12 +18,19 @@ export const Box = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    height: 1024px;
 
     padding-top: 28px;
     padding-right: 32px;
     padding-left: 32px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+    height: 100vh;
 
-    min-height: 1024px;
+    padding-top: 48px;
+    padding-right: 28px;
+    padding-left: 28px;
   }
 `;
 

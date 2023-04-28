@@ -5,8 +5,15 @@ export const Container = styled.div`
   margin: 0 auto;
   min-width: 320px;
 
+  img {
+    margin: 0 auto;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
+    display: flex;
+    padding-bottom: 40px;
+
+    background-color: white;
   }
 `;
 
@@ -18,12 +25,24 @@ export const Box = styled.div`
 
   background-color: #f4f4f4;
   color: black;
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    padding-top: 32px;
+    padding-bottom: 33px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 32px;
   text-align: center;
   margin-bottom: 69px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const Wrap = styled.div`
@@ -49,6 +68,10 @@ export const FormInput = styled(Field)`
   border: none;
   border-radius: 5px;
   outline: none;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
 `;
 
 export const ErrorForm = styled.div`

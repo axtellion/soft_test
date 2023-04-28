@@ -4,6 +4,9 @@ export const Container = styled.div`
   margin: 0 auto;
   min-width: 320px;
 
+  img {
+    margin: 0 auto;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
 

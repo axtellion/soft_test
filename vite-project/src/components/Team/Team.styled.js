@@ -14,10 +14,15 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 `;
 
 export const Box = styled.div`
+  margin: 0 auto;
   text-align: center;
   width: 280px;
   @media screen and (min-width: 768px) {
@@ -56,8 +61,12 @@ export const List = styled.ul`
   gap: 30px;
 
   text-align: center;
+
+  li {
+    margin: 0 auto;
+  }
   @media screen and (min-width: 768px) {
-    gap: 18px;
+    gap: 17px;
   }
 `;
 

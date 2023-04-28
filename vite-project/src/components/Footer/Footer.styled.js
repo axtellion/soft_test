@@ -24,3 +24,7 @@ export const List = styled.ul`
 
   margin-bottom: 12px;
 `;
+
+export const Text = styled.p`
+  text-align: center;
+`;
