@@ -19,6 +19,14 @@ export const Container = styled.div`
     padding-left: 32px;
     padding-right: 32px;
   }
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+
+    padding-top: 80px;
+    padding-bottom: 88px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 `;
 
 export const Box = styled.div`
@@ -33,6 +41,9 @@ export const Box = styled.div`
 
 export const PreTittle = styled.p`
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -53,6 +64,9 @@ export const Text = styled.p`
 
     margin-bottom: 24px;
   }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 36px;
+  }
 `;
 
 export const List = styled.ul`
@@ -68,6 +82,9 @@ export const List = styled.ul`
   @media screen and (min-width: 768px) {
     gap: 17px;
   }
+  @media screen and (min-width: 1360px) {
+    gap: 20px;
+  }
 `;
 
 export const ListImg = styled.img`
@@ -75,6 +92,10 @@ export const ListImg = styled.img`
   @media screen and (min-width: 768px) {
     width: 223px;
     height: 148px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 421px;
+    height: 287px;
   }
 `;
 

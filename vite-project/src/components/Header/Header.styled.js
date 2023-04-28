@@ -20,6 +20,9 @@ export const Box = styled.div`
     justify-content: space-between;
 
     margin-bottom: 314px;
+    @media screen and (min-width: 1360px) {
+      margin-bottom: 183px;
+    }
   }
 `;
 
@@ -28,4 +31,10 @@ export const List = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 12px;
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+  @media screen and (min-width: 1360px) {
+    gap: 40px;
+  }
 `;

@@ -54,6 +54,7 @@ export const Title = styled.h1`
 
   @media screen and (min-width: 768px) {
     width: 100%;
+    font-size: 55px;
   }
 `;
 
@@ -62,6 +63,13 @@ export const Text = styled.p`
   font-size: 26px;
 
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    width: 523px;
+    font-size: 40px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 100%;
+  }
 `;
 
 export const Btn = styled.button`

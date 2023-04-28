@@ -17,6 +17,10 @@ export const Container = styled.div`
     padding-left: 32px;
     padding-right: 32px;
   }
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+    padding: 80px 28px;
+  }
 `;
 
 export const Box = styled.div`
@@ -58,6 +62,10 @@ export const Foto = styled.img`
   @media screen and (min-width: 768px) {
     width: 223px;
     height: 148px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 421px;
+    height: 282px;
   }
 `;
 

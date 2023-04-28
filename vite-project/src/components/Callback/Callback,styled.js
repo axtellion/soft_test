@@ -7,6 +7,10 @@ export const Container = styled.div`
 
   img {
     margin: 0 auto;
+    @media screen and (min-width: 1360px) {
+      width: 670px;
+      height: 454px;
+    }
   }
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -14,6 +18,9 @@ export const Container = styled.div`
     padding-bottom: 40px;
 
     background-color: white;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
   }
 `;
 
@@ -27,10 +34,19 @@ export const Box = styled.div`
   color: black;
   @media screen and (min-width: 768px) {
     width: 400px;
+
     padding-top: 32px;
     padding-bottom: 33px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 690px;
+
+    padding-top: 57px;
+    padding-bottom: 77px;
+    padding-left: 28px;
+    padding-right: 20px;
   }
 `;
 
@@ -42,6 +58,9 @@ export const Title = styled.h2`
   @media screen and (min-width: 768px) {
     font-size: 40px;
     margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1360px) {
+    text-align: left;
   }
 `;
 
@@ -71,6 +90,9 @@ export const FormInput = styled(Field)`
 
   @media screen and (min-width: 768px) {
     width: 336px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 100%;
   }
 `;
 

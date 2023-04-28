@@ -6,12 +6,19 @@ export const Container = styled.div`
 
   img {
     margin: 0 auto;
+    @media screen and (min-width: 1360px) {
+      width: 670px;
+      height: 460px;
+    }
   }
   @media screen and (min-width: 768px) {
     width: 768px;
 
     display: flex;
     flex-direction: row-reverse;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
   }
 `;
 
@@ -25,6 +32,14 @@ export const Box = styled.div`
   @media screen and (min-width: 768px) {
     width: 400px;
     padding: 59px 32px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 690px;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 28px;
   }
 `;
 
@@ -43,6 +58,9 @@ export const Text = styled.p`
 
   @media screen and (min-width: 768px) {
     width: 315px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 642px;
   }
 `;
 

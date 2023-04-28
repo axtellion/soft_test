@@ -9,6 +9,12 @@ export const Container = styled.div`
 
     display: flex;
   }
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+    img {
+      width: 670px;
+    }
+  }
 `;
 
 export const Box = styled.div`
@@ -19,6 +25,13 @@ export const Box = styled.div`
     padding: 62px 32px;
 
     width: 400px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 86px;
+    padding-right: 28px;
+    padding-left: 20px;
   }
 `;
 
@@ -36,6 +49,9 @@ export const Title = styled.h2`
 
     width: 270px;
   }
+  @media screen and (min-width: 1360px) {
+    width: 100%;
+  }
 `;
 
 export const Text = styled.p`
@@ -43,6 +59,9 @@ export const Text = styled.p`
 
   @media screen and (min-width: 768px) {
     width: 315px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 100%;
   }
 `;
 
