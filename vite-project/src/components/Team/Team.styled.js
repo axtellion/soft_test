@@ -19,8 +19,11 @@ export const Container = styled.div`
 
 export const Box = styled.div`
   text-align: center;
-
   width: 280px;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    width: 100%;
+  }
 `;
 
 export const PreTittle = styled.p`
@@ -31,12 +34,20 @@ export const Title = styled.h2`
   font-size: 32px;
 
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const Text = styled.p`
   margin-bottom: 63px;
 
   width: 270px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+
+    margin-bottom: 24px;
+  }
 `;
 
 export const List = styled.ul`
@@ -45,13 +56,23 @@ export const List = styled.ul`
   gap: 30px;
 
   text-align: center;
+  @media screen and (min-width: 768px) {
+    gap: 18px;
+  }
 `;
 
 export const ListImg = styled.img`
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    width: 223px;
+    height: 148px;
+  }
 `;
 
 export const ListTitle = styled.h3`
   font-size: 20px;
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
 `;

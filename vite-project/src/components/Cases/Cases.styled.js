@@ -9,8 +9,13 @@ export const Container = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 
+  background-color: white;
+
   @media screen and (min-width: 768px) {
     width: 768px;
+
+    padding-left: 32px;
+    padding-right: 32px;
   }
 `;
 
@@ -31,6 +36,11 @@ export const Title = styled.h2`
 
   margin: 0 auto;
   margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    width: 100%;
+  }
 `;
 
 export const Text = styled.p`
@@ -38,10 +48,25 @@ export const Text = styled.p`
   margin: 0 auto;
 
   margin-bottom: 31px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const Foto = styled.img`
+  @media screen and (min-width: 768px) {
+    width: 223px;
+    height: 148px;
+  }
 `;
 
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    gap: 17px;
+  }
 `;

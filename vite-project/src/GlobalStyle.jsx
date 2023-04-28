@@ -25,6 +25,10 @@ html {
   font-weight: 400px;
   font-size: 16px;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 img {
   display: block;

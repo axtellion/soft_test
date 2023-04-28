@@ -6,6 +6,9 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 768px;
+
+    display: flex;
+    flex-direction: row-reverse;
   }
 `;
 
@@ -16,6 +19,10 @@ export const Box = styled.div`
   padding-right: 20px;
 
   background-color: #0284d0;
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    padding: 59px 32px;
+  }
 `;
 
 export const PreTitle = styled.p`
@@ -30,6 +37,10 @@ export const Title = styled.h2`
 
 export const Text = styled.p`
   margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 315px;
+  }
 `;
 
 export const Btn = styled.button`
