@@ -1,25 +1,53 @@
 import styled from "styled-components";
-import bg from "../../img/images/home/showcase.jpg";
+// import bg from "../../img/images/home/showcase.jpg";
+
+import bgMob from "../../img/images/hero/bg_mob.jpg";
+import bgMobX2 from "../../img/images/hero/bg_mob2x.jpg";
+import bgTab from "../../img/images/hero/bg_tab.jpg";
+import bgTabX2 from "../../img/images/hero/bg_tab2x.jpg";
+import bgDes from "../../img/images/hero/bg_des.jpg";
+import bgDesX2 from "../../img/images/hero/bg_des2x.jpg";
 
 export const Box = styled.div`
   width: 320px;
-  height: 100vh;
+  height: 533px;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),
-    url(${bg});
+    url(${bgMob});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),
+      url(${bgMobX2});
+  }
+
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 1024px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),
+      url(${bgTab});
+  }
+
+  @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),
+      url(${bgTabX2});
   }
 
   @media screen and (min-width: 1360px) {
     width: 1360px;
     height: 768px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),
+      url(${bgDes});
+  }
+
+  @media screen and (min-width: 1360px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),  url(${bgDesX2});
   }
 `;
 
