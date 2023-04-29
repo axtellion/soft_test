@@ -70,4 +70,15 @@ export const Btn = styled.button`
   border: 1px solid white;
 
   background-color: transparent;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  :hover {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    border-color: #28a745;
+    background-color: white;
+    color: #28a745;
+  }
 `;

@@ -114,10 +114,9 @@ export const Btn = styled.button`
   border: none;
   border-radius: 5px;
 
-  cursor: pointer;
-
-  :hover,
-  :focus {
-    color: #7fffd4;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  :hover {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #2ebf4f;
   }
 `;

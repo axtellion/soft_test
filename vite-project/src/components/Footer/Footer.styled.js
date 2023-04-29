@@ -31,3 +31,15 @@ export const List = styled.ul`
 export const Text = styled.p`
   text-align: center;
 `;
+
+export const Item = styled.li`
+  svg {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 35px;
+    height: 35px;
+    :hover {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: #28a745;
+    }
+  }
+`;
