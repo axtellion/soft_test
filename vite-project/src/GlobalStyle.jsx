@@ -14,6 +14,7 @@ html {
   box-sizing: inherit;
 }
   body {
+    position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;

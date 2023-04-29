@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 0 auto;
-  min-width: 320px;
+  width: 320px;
 
   img {
     margin: 0 auto;

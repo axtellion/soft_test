@@ -2,12 +2,8 @@ import styled from "styled-components";
 import bg from "../../img/images/home/showcase.jpg";
 
 export const Box = styled.div`
-  min-width: 320px;
+  width: 320px;
   height: 100vh;
-
-  padding-top: 22px;
-  padding-right: 22px;
-  padding-left: 22px;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),
     url(${bg});
@@ -19,18 +15,11 @@ export const Box = styled.div`
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 1024px;
-
-    padding-top: 28px;
-    padding-right: 32px;
-    padding-left: 32px;
   }
+
   @media screen and (min-width: 1360px) {
     width: 1360px;
     height: 100vh;
-
-    padding-top: 48px;
-    padding-right: 28px;
-    padding-left: 28px;
   }
 `;
 
@@ -50,11 +39,17 @@ export const Title = styled.h1`
   font-size: 40px;
   font-weight: 600;
 
+  margin-top: 160px;
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     width: 100%;
     font-size: 55px;
+
+    margin-top: 378px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-top: 272px;
   }
 `;
 
