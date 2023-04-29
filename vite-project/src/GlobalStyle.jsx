@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -26,7 +27,7 @@ html {
   font-size: 16px;
   
   justify-content: center;
-  
+
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
@@ -49,6 +50,7 @@ img {
     list-style-type: none;
   }
   a{
+    color: currentColor;
     text-decoration: none;
   }
 `;

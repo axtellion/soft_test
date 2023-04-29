@@ -9,7 +9,7 @@ export const Blog = () => {
   const isDesctop = useMediaQuery("(min-width: 1360px)");
 
   return (
-    <Container>
+    <Container id="blog">
       {isPhone && <img src={blog} alt="Blog" />}
       {isTable && <img src={blogTab} alt="Blog" />}
       {isDesctop && <img src={blog} alt="Blog" />}

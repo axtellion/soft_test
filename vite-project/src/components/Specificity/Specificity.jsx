@@ -16,7 +16,7 @@ export const Specificity = () => {
   const isDesctop = useMediaQuery("(min-width: 1360px)");
 
   return (
-    <Container>
+    <Container id="about">
       {isPhone && <img src={people} alt="Team" />}
       {isTable && <img src={peopleTab} alt="Team" />}
       {isDesctop && <img src={people} alt="Team" />}

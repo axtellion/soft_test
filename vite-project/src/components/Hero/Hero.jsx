@@ -5,7 +5,7 @@ import next from "../../img/images/vector.svg";
 
 export const Hero = () => {
   return (
-    <Box>
+    <Box id="home">
       <Header />
       <TextBox>
         <Title>The Sky Is The Limit</Title>

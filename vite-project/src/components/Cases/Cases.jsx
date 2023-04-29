@@ -16,7 +16,7 @@ import case6 from "../../img/images/cases/cases6.jpg";
 
 export const Cases = () => {
   return (
-    <Container>
+    <Container id="cases">
       <Box>
         <PreTitle>This is what we do</PreTitle>
         <Title>Business Cases</Title>

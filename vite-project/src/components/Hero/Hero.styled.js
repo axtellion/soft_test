@@ -82,8 +82,15 @@ export const Btn = styled.button`
   gap: 9px;
 
   background-color: #28a745;
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   img {
     width: 8px;
     height: 12px;
+  }
+  :hover {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #2ebf4f;
   }
 `;

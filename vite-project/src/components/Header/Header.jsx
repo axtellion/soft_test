@@ -1,16 +1,29 @@
-import { Box, List } from "./Header.styled";
-import logo from "../../img/images/frame.svg";
+import { Box, List, Link, NavLink } from "./Header.styled";
+import { FaBookOpen } from "react-icons/fa";
 
 export const Header = () => {
   return (
     <Box>
-      <img src={logo} alt="Logo" />
+      <Link href="#home">
+        <FaBookOpen />
+        Finance <span>Ledger</span>
+      </Link>
       <List>
-        <li>Home</li>
-        <li>About</li>
-        <li>Cases</li>
-        <li>Blog</li>
-        <li>Contact</li>
+        <li>
+          <NavLink href="#home">Home</NavLink>
+        </li>
+        <li>
+          <NavLink href="#about">About</NavLink>
+        </li>
+        <li>
+          <NavLink href="#cases">Cases</NavLink>
+        </li>
+        <li>
+          <NavLink href="#blog">Blog</NavLink>
+        </li>
+        <li>
+          <NavLink href="#contact">Contact</NavLink>
+        </li>
       </List>
     </Box>
   );
