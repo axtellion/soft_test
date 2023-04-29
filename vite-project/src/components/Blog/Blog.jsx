@@ -1,7 +1,10 @@
-import blog from "../../img/images/home/blog.jpg";
-import blogTab from "../../img/images/home/blogTab.jpg";
-import { Box, PreTitle, Title, Text, Btn, Container } from "./Blog.styled";
 import useMediaQuery from "react-use-media-query-hook";
+import { Box, PreTitle, Title, Text, Btn, Container } from "./Blog.styled";
+
+import blog from "../../img/images/home/blog.jpg";
+import blogX2 from "../../img/images/home/blog@2x.jpg";
+import blogTab from "../../img/images/home/blogTab.jpg";
+import blogTabX2 from "../../img/images/home/blogTab2x.jpg";
 
 export const Blog = () => {
   const isPhone = useMediaQuery("(max-width: 767px)");
@@ -10,9 +13,19 @@ export const Blog = () => {
 
   return (
     <Container id="blog">
-      {isPhone && <img src={blog} alt="Blog" />}
-      {isTable && <img src={blogTab} alt="Blog" />}
-      {isDesctop && <img src={blog} alt="Blog" />}
+      {isPhone && (
+        <img srcSet={`${blog} 1x, ${blogX2} 2x`} src={blog} alt="Blog" />
+      )}
+      {isTable && (
+        <img
+          srcSet={`${blogTab} 1x, ${blogTabX2} 2x`}
+          src={blogTab}
+          alt="Blog"
+        />
+      )}
+      {isDesctop && (
+        <img srcSet={`${blog} 1x, ${blogX2} 2x`} src={blog} alt="Blog" />
+      )}
       <Box>
         <PreTitle>April 16 2020</PreTitle>
         <Title>Blog Post One</Title>

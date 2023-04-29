@@ -13,7 +13,9 @@ import {
 } from "./Callback,styled";
 
 import contact from "../../img/images/home/contact.jpg";
+import contactX2 from "../../img/images/home/contact@2x.jpg";
 import contactTab from "../../img/images/home/contactTab.jpg";
+import contactTabX2 from "../../img/images/home/contactTab2x.jpg";
 import { WarningMessege } from "../Warning/WarningMessege";
 
 const values = { name: "", email: "" };
@@ -35,9 +37,27 @@ export const Callback = () => {
   };
   return (
     <Container id="contact">
-      {isPhone && <img src={contact} alt="Man" />}
-      {isTable && <img src={contactTab} alt="Man" />}
-      {isDesctop && <img src={contact} alt="Man" />}
+      {isPhone && (
+        <img
+          srcSet={`${contact} 1x, ${contactX2} 2x`}
+          src={contact}
+          alt="Man"
+        />
+      )}
+      {isTable && (
+        <img
+          srcSet={`${contactTab} 1x, ${contactTabX2} 2x`}
+          src={contactTab}
+          alt="Man"
+        />
+      )}
+      {isDesctop && (
+        <img
+          srcSet={`${contact} 1x, ${contactX2} 2x`}
+          src={contact}
+          alt="Man"
+        />
+      )}
       <Box>
         <Title>Request Callback</Title>
         <Formik
