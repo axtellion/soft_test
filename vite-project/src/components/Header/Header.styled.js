@@ -19,6 +19,7 @@ export const Box = styled.div`
   padding-right: 22px;
   padding-left: 22px;
 
+  z-index: 100;
   @media screen and (min-width: 768px) {
     margin-top: ${({ offset }) => (offset >= 70 ? "0" : "28px")};
     position: ${({ offset }) => (offset >= 70 ? "fixed" : "absolute")};

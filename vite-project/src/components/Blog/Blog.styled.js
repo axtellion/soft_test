@@ -60,7 +60,7 @@ export const Text = styled.p`
     width: 315px;
   }
   @media screen and (min-width: 1360px) {
-    width: 642px;
+    width: 540px;
   }
 `;
 

@@ -16,8 +16,7 @@ html {
   body {
     position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+ font-family: "Open Sans";
   color: #212121;
   background-color: #E8E8E8;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +32,8 @@ html {
     font-size: 18px;
   }
 }
+
+
 img {
   display: block;
   max-width: 100%;
@@ -43,8 +44,10 @@ img {
       monospace;
   }
   h1,h2,h3,h4,h5,h6,p {
+    
     margin: 0;
   }
+ 
   ul{
     margin: 0;
     padding: 0;
