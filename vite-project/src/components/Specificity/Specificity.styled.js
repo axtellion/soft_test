@@ -57,8 +57,9 @@ export const Title = styled.h2`
 export const Text = styled.p`
   margin-bottom: 24px;
 
+  width: 230px;
   @media screen and (min-width: 768px) {
-    width: 315px;
+    width: 280px;
   }
   @media screen and (min-width: 1360px) {
     width: 540px;
