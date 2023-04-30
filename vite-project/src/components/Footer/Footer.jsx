@@ -6,19 +6,27 @@ export const Footer = () => {
     <Box>
       <List>
         <Item>
-          <FaFacebook />
+          <a href="https://www.facebook.com/" target="_blanck">
+            <FaFacebook />
+          </a>
         </Item>
         <Item>
-          <FaTwitter />
+          <a href="https://twitter.com/?lang=uk" target="_blanck">
+            <FaTwitter />
+          </a>
         </Item>
         <Item>
-          <FaYoutube />
+          <a href="https://www.youtube.com/" target="_blanck">
+            <FaYoutube />
+          </a>
         </Item>
         <Item>
-          <FaLinkedinIn />
+          <a href="https://www.linkedin.com/in/anton-honchar/" target="_blanck">
+            <FaLinkedinIn />
+          </a>
         </Item>
       </List>
-      <Text>Copyright © 2021 - FinanceLedger</Text>
+      <Text>Copyright &copy; 2021 - FinanceLedger</Text>
     </Box>
   );
 };
