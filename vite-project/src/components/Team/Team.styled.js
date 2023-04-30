@@ -77,7 +77,21 @@ export const List = styled.ul`
   text-align: center;
 
   li {
+    position: relative;
     margin: 0 auto;
+
+    svg {
+      opacity: 0;
+    }
+    :hover {
+      transform: scale(1.07);
+      box-shadow: 12px 13px 52px -15px rgba(0, 0, 0, 0.75);
+      opacity: 0.6;
+
+      svg {
+        opacity: 0.8;
+      }
+    }
   }
   @media screen and (min-width: 768px) {
     gap: 17px;
@@ -89,6 +103,7 @@ export const List = styled.ul`
 
 export const ListImg = styled.img`
   margin-bottom: 16px;
+
   @media screen and (min-width: 768px) {
     width: 223px;
     height: 148px;
@@ -104,5 +119,29 @@ export const ListTitle = styled.h3`
   margin-bottom: 8px;
   @media screen and (min-width: 768px) {
     font-size: 32px;
+  }
+`;
+
+export const SocialBox = styled.div`
+  position: absolute;
+  left: 20px;
+  top: 250px;
+  z-index: 1;
+
+  width: 100%;
+
+  display: flex;
+  gap: 30px;
+
+  svg {
+    cursor: pointer;
+
+    color: #ffffff;
+
+    width: 30px;
+    height: 30px;
+    :hover {
+      color: #28a745;
+    }
   }
 `;

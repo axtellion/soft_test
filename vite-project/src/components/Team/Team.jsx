@@ -1,3 +1,5 @@
+import { FaFacebook, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+
 import {
   Box,
   Container,
@@ -7,6 +9,7 @@ import {
   Title,
   ListTitle,
   ListImg,
+  SocialBox,
 } from "./Team.styled";
 
 import person1 from "../../img/images/team/person1.jpg";
@@ -35,6 +38,12 @@ export const Team = () => {
               src={person1}
               alt="Person on Team"
             />
+            <SocialBox>
+              <FaFacebook />
+              <FaTwitter />
+              <FaYoutube />
+              <FaLinkedinIn />
+            </SocialBox>
             <ListTitle>John Doe</ListTitle>
             <p>President</p>
           </li>
@@ -44,6 +53,12 @@ export const Team = () => {
               src={person2}
               alt="Person on Team"
             />
+            <SocialBox>
+              <FaFacebook />
+              <FaTwitter />
+              <FaYoutube />
+              <FaLinkedinIn />
+            </SocialBox>
             <ListTitle>Jane Doe</ListTitle>
             <p>Vice President</p>
           </li>
@@ -53,6 +68,12 @@ export const Team = () => {
               src={person3}
               alt="Person on Team"
             />
+            <SocialBox>
+              <FaFacebook />
+              <FaTwitter />
+              <FaYoutube />
+              <FaLinkedinIn />
+            </SocialBox>
             <ListTitle>Steve Smith</ListTitle>
             <p>Marketing Head</p>
           </li>

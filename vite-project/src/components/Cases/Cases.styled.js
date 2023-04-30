@@ -71,6 +71,10 @@ export const List = styled.ul`
 `;
 
 export const Foto = styled.img`
+  cursor: pointer;
+  :hover {
+    opacity: 0.8;
+  }
   @media screen and (min-width: 768px) {
     width: 223px;
     height: 148px;
