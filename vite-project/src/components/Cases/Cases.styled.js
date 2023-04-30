@@ -58,17 +58,6 @@ export const Text = styled.p`
   }
 `;
 
-export const Foto = styled.img`
-  @media screen and (min-width: 768px) {
-    width: 223px;
-    height: 148px;
-  }
-  @media screen and (min-width: 1360px) {
-    width: 421px;
-    height: 282px;
-  }
-`;
-
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -78,5 +67,16 @@ export const List = styled.ul`
 
   @media screen and (min-width: 768px) {
     gap: 17px;
+  }
+`;
+
+export const Foto = styled.img`
+  @media screen and (min-width: 768px) {
+    width: 223px;
+    height: 148px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 421px;
+    height: 282px;
   }
 `;

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Container,
   PreTitle,
@@ -7,6 +8,8 @@ import {
   List,
   Foto,
 } from "./Cases.styled";
+
+import { Modal } from "../Modal/Modal";
 
 import case1 from "../../img/images/cases/cases1.jpg";
 import case1X2 from "../../img/images/cases/cases1@2x.jpg";
@@ -21,7 +24,58 @@ import case5X2 from "../../img/images/cases/cases5@2x.jpg";
 import case6 from "../../img/images/cases/cases6.jpg";
 import case6X2 from "../../img/images/cases/cases6@2x.jpg";
 
+const cart = [
+  { url: case1, largeUrl: case1X2, alt: "Image Cases" },
+  { url: case2, largeUrl: case2X2, alt: "Image Cases" },
+  { url: case3, largeUrl: case3X2, alt: "Image Cases" },
+  { url: case4, largeUrl: case4X2, alt: "Image Cases" },
+  { url: case5, largeUrl: case5X2, alt: "Image Cases" },
+  { url: case6, largeUrl: case6X2, alt: "Image Cases" },
+];
+
 export const Cases = () => {
+  const [clickedImg, setClickedImg] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
+
+  const handelClick = (item, index) => {
+    setCurrentIndex(index);
+    setClickedImg(item.url);
+  };
+
+  const handelRotationRight = () => {
+    const totalLength = cart.length;
+    if (currentIndex + 1 >= totalLength) {
+      setCurrentIndex(0);
+      const newUrl = cart[0].url;
+      setClickedImg(newUrl);
+      return;
+    }
+    const newIndex = currentIndex + 1;
+    const newUrl = cart.filter((item) => {
+      return cart.indexOf(item) === newIndex;
+    });
+    const newItem = newUrl[0].url;
+    setClickedImg(newItem);
+    setCurrentIndex(newIndex);
+  };
+
+  const handelRotationLeft = () => {
+    const totalLength = cart.length;
+    if (currentIndex === 0) {
+      setCurrentIndex(totalLength - 1);
+      const newUrl = cart[totalLength - 1].url;
+      setClickedImg(newUrl);
+      return;
+    }
+    const newIndex = currentIndex - 1;
+    const newUrl = cart.filter((item) => {
+      return cart.indexOf(item) === newIndex;
+    });
+    const newItem = newUrl[0].url;
+    setClickedImg(newItem);
+    setCurrentIndex(newIndex);
+  };
+
   return (
     <Container id="cases">
       <Box>
@@ -34,50 +88,26 @@ export const Cases = () => {
       </Box>
       <div>
         <List>
-          <li>
-            <Foto
-              srcSet={`${case1} 1x, ${case1X2} 2x`}
-              src={case1}
-              alt="Foto Team"
-              media="(min-width:1360px)"
-            />
-          </li>
-          <li>
-            <Foto
-              srcSet={`${case3} 1x, ${case3X2} 2x`}
-              src={case3}
-              alt="Foto Team"
-            />
-          </li>
-          <li>
-            <Foto
-              srcSet={`${case5} 1x, ${case5X2} 2x`}
-              src={case5}
-              alt="Foto Team"
-            />
-          </li>
-          <li>
-            <Foto
-              srcSet={`${case6} 1x, ${case6X2} 2x`}
-              src={case6}
-              alt="Foto Team"
-            />
-          </li>
-          <li>
-            <Foto
-              srcSet={`${case2} 1x, ${case2X2} 2x`}
-              src={case2}
-              alt="Foto Team"
-            />
-          </li>
-          <li>
-            <Foto
-              srcSet={`${case4} 1x, ${case4X2} 2x`}
-              src={case4}
-              alt="Foto Team"
-            />
-          </li>
+          {cart.map((item, index) => {
+            return (
+              <li key={index}>
+                <Foto
+                  src={item.url}
+                  alt="Foto Team"
+                  onClick={() => handelClick(item, index)}
+                />
+              </li>
+            );
+          })}
         </List>
+        {clickedImg && (
+          <Modal
+            clickedImg={clickedImg}
+            handelRotationRight={handelRotationRight}
+            setClickedImg={setClickedImg}
+            handelRotationLeft={handelRotationLeft}
+          />
+        )}
       </div>
     </Container>
   );

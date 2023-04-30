@@ -25,7 +25,7 @@ export const Specificity = () => {
       )}
       {isTable && (
         <img
-          srcSet={`${people} 1x, ${peopleTabX2} 2x`}
+          srcSet={`${peopleTab} 1x, ${peopleTabX2} 2x`}
           src={peopleTab}
           alt="Team"
         />
