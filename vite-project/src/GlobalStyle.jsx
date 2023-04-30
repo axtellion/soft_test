@@ -33,6 +33,11 @@ html {
   }
 }
 
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
 
 img {
   display: block;
